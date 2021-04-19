@@ -46,7 +46,7 @@ function aliceCheck() {
     
     if (searchAliceType == "linear1") {
         for (let i = 0; i < aliceWords.length; i++) {
-            let index = linearSearch(dictionary, aliceWords[i].toLowerCase);
+            let index = linearSearch(dictionary, aliceWords[i].toLowerCase());
             if (index == -1) {
                 console.log(aliceWords[i] + " is not in the dictionary.");
                 words++;
@@ -55,7 +55,7 @@ function aliceCheck() {
         }
     } else {
         for (let i = 0; i < aliceWords.length; i++) {
-            let index = binarySearch(dictionary, aliceWords[i].toLowerCase);
+            let index = binarySearch(dictionary, aliceWords[i].toLowerCase());
             if (index == -1) {
                 console.log(aliceWords[i] + " is not in the dictionary.");
                 words++;
